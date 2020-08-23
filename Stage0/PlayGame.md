@@ -101,4 +101,5 @@ How the Game is played
 
   Then either the ball collides with bars or
   the ball first collides with bars then
-  with top and bottom walls
+  with top and bottom walls then only
+  score in increased by 1
