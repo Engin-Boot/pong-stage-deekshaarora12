@@ -52,7 +52,7 @@ How the Game is played
   
 ### Scenario: Winner is Declared
 
-  Given the game is started, player 1 or Player 2 hits the ball 
+  Given the game is started, player 1 or Player 2 hits the ball
 
   When the score is checked
 
@@ -61,7 +61,7 @@ How the Game is played
   
 ### Scenario: Game Over
 
-  Given the score is greater than or equal to 100 
+  Given the score is greater than or equal to 100
 
   When Player 1 or Player 2 is the winner
 
@@ -69,7 +69,7 @@ How the Game is played
   
 ### Scenario: Play Again
 
-  Given the game is over 
+  Given the game is over
 
   When the user clicks play Again button
 
@@ -77,7 +77,7 @@ How the Game is played
   
 ### Scenario: Quit the game
 
-  Given the game is over 
+  Given the game is over
 
   When the user clicks quit the game button
 
