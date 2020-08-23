@@ -81,7 +81,7 @@ How the Game is played
 
   When the user clicks quit the game button
 
-  Then the game is quitted
+  Then the player quits the game
   
 ### Scenario: Change Directions
 
