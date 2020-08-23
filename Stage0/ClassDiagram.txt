@@ -1,0 +1,67 @@
+classDiagram
+	Player --|> EditDetails: Edits
+  Player -- Login:log-in
+	Player -- Signup:Create Acccount
+  Winner --* PlayGame
+  Player --> Winner: Declared
+  Player --> PlayGame: Plays
+  Signup -- Login:Checks
+	class Player{
+		+String user_name
+    +String email
+    +int player_id
+
+		+hitTheBall()
+    +QuitGame()
+    +PlayAgain()
+	}
+	class Play Game{
+  +int Player_id
+  +String user_name
+
+    +increaseScore()
+    +checkCollision()
+	}
+	class Edit Details{
+		+int Player_id
+    +String user_name
+    +String Password
+    +String Player_email
+
+    +changePassword()
+    +changeUsername()
+    +verifyPlayerNewDetails()
+	}
+  	class Login{
+		+int Player_id
+    +String user_name
+    +String Password
+    +String Player_email
+
+    +enterUsername()
+    +enterPassword()
+    
+	}
+
+  	class Signup{
+		+int Player_id
+    +String user_name
+    +String Password
+    +String Player_email
+
+    +enterUsername()
+    +enterPassword()
+    +enterEmail()
+    +VerifyEmail()
+	}
+  
+  	class Winner{
+		+int Player_id
+    +String user_name
+    
+   +CalculateScore()
+   +DeclareWinner()
+	}
+
+
+					
