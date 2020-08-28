@@ -1,0 +1,63 @@
+# Make the ball move
+
+## Feature
+
+What part of the game does this module deliver?
+how the ball is moved
+
+## Acceptance Criteria
+
+### Scenario: The ball is not hit by any of the paddle
+
+  Given the game is started
+
+  When the ball is not hit by any of the user
+
+  Then the ball remains still position on
+  the left side in the middle
+
+### Scenario: The ball is hit by left paddle(middle direction)
+
+  Given the game is started
+
+  When the ball is hit by left paddle
+
+  Then the ball moves with the velocity
+  of 2m/s in the right or diagonal
+  toward right paddle
+  
+### Scenario: The ball is hit by left paddle(top direction)
+
+  Given the game is started
+
+  When the ball is hit by left paddle
+
+  Then the ball moves with the velocity
+  of 1m/s, diagonally up, collides with the wall,
+  moves diagonally down towards other player
+  
+  ### Scenario: The ball is hit by left paddle(bottom direction)
+
+  Given the game is started
+
+  When the ball is hit by left paddle
+
+  Then the ball moves with the velocity
+  of 1m/s, diagonally down, collides with the wall,
+  moves diagonally up towards other player
+
+ ### Scenario: The ball collides with either of the wall
+
+  Given the game is started,the player does not hit the ball
+
+  When the ball collides with the wall
+
+  Then the ball bounces back towards
+  the other player in any direction,
+  can collide with top and bottom walls
+  with the velocity of 2m/s
+  
+ 
+  
+  
+  
